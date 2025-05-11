@@ -543,3 +543,21 @@ body{
   text-align: center;
   width: 100%;
 }
+
+.contacts {
+  margin-bottom: 100px;
+}
+.contacts__title {
+  font-size: 24px;
+  line-height: 33px;
+  color: #070707;
+  margin-bottom: 10px;
+}
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contacts__form {
+  flex-basis: 600px;
+}
