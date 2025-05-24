@@ -1,3 +1,5 @@
-# Oculus-Project
+# Oculus Project Website Design
 
-# WIP
+---
+
+### Visit the website [here](https://tsimurkurchyshyn.github.io/Oculus-Project/).
