@@ -73,17 +73,17 @@
       <div class="news__card news__card-1">
         <h3 class="news__card-title">Mark Tannenberg</h3>
         <p class="news__card-text">An interview with the CEO of Oculus</p>
-        <button class="news__card-button"><span class="news__button-text">SEE MORE</span></button>
+        <button class="news__card-button" onclick="showHostname1()"><span class="news__button-text">SEE MORE</span></button>
       </div>
       <div class="news__card news__card-2">
         <h3 class="news__card-title">Optum 3</h3>
         <p class="news__card-text">A new generation VR headset is out now</p>
-        <button class="news__card-button"><span class="news__button-text">SEE MORE</span></button>
+        <button class="news__card-button" onclick="showHostname2()"><span class="news__button-text">SEE MORE</span></button>
       </div>
       <div class="news__card news__card-3">
         <h3 class="news__card-title">A new sponsor</h3>
         <p class="news__card-text">Oculus signed a sponsorship with Crawfords Team</p>
-        <button class="news__card-button"><span class="news__button-text">SEE MORE</span></button>
+        <button class="news__card-button" onclick="showHostname3()"><span class="news__button-text">SEE MORE</span></button>
       </div>
     </div>
      </div>
@@ -483,5 +483,20 @@
     </footer>
 
   <script src="js/main.js"></script>
+
+  <script>
+        function showHostname1() {
+            let currentURL = window.location.hostname;
+            alert("The Interview with the CEO of Oculus");
+        }
+        function showHostname2() {
+            let currentURL = window.location.hostname;
+            alert("A New Generation VR headset is out now");
+        }
+        function showHostname3() {
+            let currentURL = window.location.hostname;
+            alert("Oculus signed a sponsorship with Crawfords Team");
+        }
+    </script>
 </body>
 </html>
