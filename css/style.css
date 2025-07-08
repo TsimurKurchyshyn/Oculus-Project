@@ -173,6 +173,95 @@ body{
   padding: 20px 105px;
 }
 
+.news{
+  padding: 100px 0;
+}
+
+.news__title{
+  margin-bottom: 30px;
+}
+
+.news__text{
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.news__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.news__card{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-size: cover;
+  width: 350px;
+  height: 450px;
+  justify-content: center;
+  transition: 1s ease;
+  gap: 45px;
+}
+
+.news__card-1{
+  background-image: url(../images/news1.jpg);
+}
+
+.news__card-2{
+  background-image: url(../images/news2.jpg);
+}
+
+.news__card-3{
+  background-image: url(../images/news3.jpg);
+}
+
+.news__card:hover{
+  transform: scale(110%);
+  transition: 1s ease;
+}
+
+.news__card-title{
+  color: #f6f4f5;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.news__card-text{
+  color: #f6f4f5;
+  text-align: center;
+  font-size: 30px;
+}
+
+.news__card-button{
+  border: none;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  display: flex;
+  padding: 0;
+  text-transform: uppercase;
+  padding: 1px;
+  border-radius: 80px;
+  justify-self: right;
+  margin-right: 15px;
+  margin-bottom: 60px;
+}
+
+.news__button-text{
+  color: #f6f4f5;
+  padding: 20px 20px;
+  text-transform: uppercase;
+}
+
+.news__card-button:hover{
+  cursor: pointer;
+  background: linear-gradient(180deg, #970dac 0%, rgba(56, 0, 177, 0.93) 100%);
+}
+
 .features{
   padding: 100px 0;
 }
@@ -544,22 +633,19 @@ body{
 }
 
 .reviews {
-  margin-bottom: 100px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   justify-content: center;
 }
 
 .review-title {
-  font-size: 50px;
+  font-size: 36px;
   text-transform: uppercase;
-  padding-bottom: 100px;
+  margin-bottom: 30px;
   background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
-  margin-top: 100px;
 }
 
 .review-card {
@@ -660,6 +746,10 @@ body{
     display: flex;
     justify-content: space-between;
   }
+  .news__card{
+    gap: 10px;
+    justify-self: center;
+  }
 }
 
 @media (max-width: 992px) {
@@ -680,6 +770,13 @@ body{
   }
   .accessories__items {
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .news__text{
+    text-align: center;
+  }
+  .news__cards{
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
 }
@@ -824,5 +921,9 @@ body{
   }
   .review-card{
     width: 320px;
+  }
+  .news__card{
+    width: 300px;
+    height: 450px;
   }
 }
