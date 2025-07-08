@@ -658,6 +658,12 @@ body{
   padding: 10px;
   display: flex;
   flex-direction: column;
+  transition: 1s ease;
+}
+
+.review-card:hover{
+  background-color: #e7e7e7;
+  transition: 1s ease;
 }
 
 .review-card__name {
